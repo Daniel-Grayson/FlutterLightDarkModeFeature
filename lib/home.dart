@@ -10,6 +10,9 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
           title: const Text(
             'Light & Dark Mode',
+            style: TextStyle(
+              color: Colors.white,
+            ),
           )),
     );
   }
