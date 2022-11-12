@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.black,
+          centerTitle: true,
           title: const Text(
             'Light & Dark Mode',
             style: TextStyle(
