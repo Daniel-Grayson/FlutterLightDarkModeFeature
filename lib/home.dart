@@ -5,13 +5,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = MediaQuery.of(context).platformBrightness == Brightness.dark
+        ? 'Dark Mode'
+        : 'Light Mode';
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.black,
           centerTitle: true,
-          title: const Text(
-            'Light & Dark Mode',
-            style: TextStyle(
+          title: Text(
+            '$text',
+            style: const TextStyle(
               color: Colors.white,
             ),
           )),
